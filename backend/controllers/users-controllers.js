@@ -5,7 +5,7 @@ const getAllUsers = (req, res) => {
         .exec((err, users) => {
             if (err) { res.status(500).send({ message: `There was an error with our database. `, error: err.message}) 
             }else if (users.length === 0){
-                res.status(404).send({ message: 'There werew no users found' })
+                res.status(404).send({ message: 'There were no users found' })
             }else {
                 res.status(200).send({users});
             }

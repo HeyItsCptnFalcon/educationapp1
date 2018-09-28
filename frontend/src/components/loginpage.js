@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { loginUser } from '../redux/actions'
+import { loginUser } from '../redux/actions/index'
 
 
 class LoginPage extends Component {
@@ -22,9 +22,16 @@ class LoginPage extends Component {
         })
     }
 
-    formSubmit = data => {
-        this.props.loginUser(this.state)
-        console.log(this.state.username)
+    formSubmit = e => {
+        e.preventDefault();
+
+        this.props.loginUser({
+            username: this.state.username,
+            password: this.state.password,
+        })
+        console.log(this.state)
+        
+           
     }
 
     render (){
@@ -55,4 +62,10 @@ class LoginPage extends Component {
 
 }
 
-export default LoginPage;
+
+const mapDispatchToProps = dispatch => ({
+    loginUser: user => dispatch(loginUser(user))
+})
+
+  export default connect(null, mapDispatchToProps)(LoginPage);  
+

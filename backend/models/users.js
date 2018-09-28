@@ -17,17 +17,17 @@ const userSchema = new Schema({
     },
     age: {
         type: Number,
-        required: true,
+        required: false,
         trim: true,
     },
     gradeLevel: {
         type: Number,
-        required: true,
+        required: false,
         trim: true
     },
     isInSchool: {
         type: Boolean,
-        required: true,
+        required: false,
         trim: true,
     },
     uri: {
