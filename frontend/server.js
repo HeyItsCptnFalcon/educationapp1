@@ -1,6 +1,6 @@
 const express       = require('express');
 
-const usersRoutes   = require('./routes/users');
+const usersRoutes   = require('./backend/routes/users');
 
 
 const app = express();
@@ -8,7 +8,7 @@ const port = 5000;
 
 // require .env and db.js
 require('dotenv').load();
-require('./config/db')
+require('./backend/config/db')
 
 // middleware
 app.use(express.json());

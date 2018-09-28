@@ -1,4 +1,5 @@
 backend/node_modules
-educationapp1/node_modules
+backend/package-lock.json
 
-.DS_Store
+frontend/node_modules
+frontend/package-lock.json
