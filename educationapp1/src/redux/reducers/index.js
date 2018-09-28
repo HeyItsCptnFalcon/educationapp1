@@ -1,7 +1,8 @@
 
 const initialState = {
   user:{},
-  isLoggedin: false
+  isLoggedin: false,
+  userProfile:[]
 }
 
 const rootReducer = (state = initialState, action) => {

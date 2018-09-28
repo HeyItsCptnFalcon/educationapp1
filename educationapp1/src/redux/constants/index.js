@@ -1,0 +1,1 @@
+export const REQUESTED_DATA = "RECIEVED_DATA";
