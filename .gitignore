@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -19,3 +20,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+backend/node_modules
+educationapp1/node_modules
+
+.DS_Store
+>>>>>>> fb7b3e025bb59afe7a39e206e73be0e1d2b205a8
