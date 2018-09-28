@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
+
+import MainPage from './components/mainPage';
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hello WORLD!</h1>
-      </div>
+        <MainPage 
+        />
 
+      </div>
     );
   }
 }
+
 
 export default App;
