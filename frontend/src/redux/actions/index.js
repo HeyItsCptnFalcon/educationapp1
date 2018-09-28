@@ -13,5 +13,7 @@ export const loginUser = (user) => dispatch => {
 //     dispatch({ type: LOGIN_USER_ASYNC, message: response });
 //   }
 
-
-// const addInput = input => ({ type: 'Input'})
+export const loginUser = user => async dispatch => {
+    let response = axios.post('');
+    dispatch({ type: LOGIN_USER_ASYNC });
+  }

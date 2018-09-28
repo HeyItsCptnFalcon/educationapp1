@@ -1,7 +1,7 @@
 import {LOGIN_USER_ASYNC } from '../constants'
 
 const initialState = {
-  user:{},
+  isLoading: false,
   isLoggedin: false,
   userLogin:[]
 }
