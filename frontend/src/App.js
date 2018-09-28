@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD:educationapp1/src/App.js
-import LoginPage from './components/loginPage';
-// import { connect } from 'react-redux';
-=======
+import LoginPage from './components/loginpage';
+import SignupPage from './components/signupname';
 
-import MainPage from './components/mainPage';
->>>>>>> 3c100d0f93f13d46f20144386eeb7235f67dd865:frontend/src/App.js
 
 
 class App extends Component {
-  render() {
-    return (
+
+  state ={
+
+  }
+
+  render(){
+    return(
+
       <div>
-<<<<<<< HEAD:educationapp1/src/App.js
-        <h1>Hello WORLD!</h1>
-        <LoginPage />
-      </div>
-=======
->>>>>>> 3c100d0f93f13d46f20144386eeb7235f67dd865:frontend/src/App.js
+        <h1>Education Page</h1>
+        <LoginPage/>
+        <SignupPage/>
 
       </div>
     );
-  }
-}
 
+
+  }
+
+}
 
 export default App;

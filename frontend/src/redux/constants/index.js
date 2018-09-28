@@ -1,0 +1,1 @@
+export const LOGIN_USER_ASYNC = 'LOGIN_USER_ASYNC';
